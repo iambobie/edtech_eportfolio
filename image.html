@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EME 6208 e-portfolio: Image Editing" />
+    <title>Image Editing | Bobie Ansah</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,700,300"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <style>
+      /* Page-specific additions; existing style.css controls the overall appearance. */
+      .container {
+        max-width: 1200px;
+        width: calc(100% - 40px);
+      }
+      #menu-wrapper,
+      #menu {
+        height: auto;
+        min-height: 52px;
+      }
+      #menu {
+        overflow: visible;
+      }
+      #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #menu a {
+        padding: 0 17px;
+      }
+      #logo {
+        height: auto;
+        padding: 10px 0 28px;
+      }
+      #logo h1 {
+        font-size: clamp(34px, 6vw, 80px);
+        letter-spacing: -2px;
+      }
+      #logo p {
+        margin-top: 0;
+        font-size: clamp(14px, 2vw, 20px);
+      }
+      #page {
+        box-sizing: border-box;
+      }
+      .portfolio-panel {
+        background: #fff;
+        padding: 32px;
+        margin: 10px 0 30px;
+        color: #3c342e;
+      }
+      .portfolio-panel h2 {
+        color: #2d2d2d;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      .portfolio-panel h3 {
+        color: #2d2d2d;
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      .portfolio-panel p {
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .project-card {
+        background: #fff;
+        padding: 25px;
+        color: #3c342e;
+      }
+      .project-card h3 {
+        color: #2d2d2d;
+        font-size: 20px;
+        margin: 0 0 14px;
+      }
+      .project-card p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .image-placeholder {
+        aspect-ratio: 4 / 5;
+        background: #e5e6dd;
+        border: 2px dashed #7d7764;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        color: #635d4e;
+        padding: 18px;
+        box-sizing: border-box;
+      }
+      .image-placeholder strong {
+        font-size: 18px;
+      }
+      .image-placeholder span {
+        font-size: 13px;
+      }
+      .contact-form {
+        display: grid;
+        gap: 16px;
+        max-width: 650px;
+      }
+      .contact-form label {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #c9c8bf;
+        border-radius: 2px;
+        padding: 12px;
+        font: inherit;
+        font-size: 15px;
+        color: #2d2d2d;
+        background: #fff;
+      }
+      .contact-form textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+      .contact-form button {
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        font-size: 14px;
+      }
+      .small-note {
+        font-size: 13px !important;
+        color: #625e56;
+      }
+      @media (max-width: 700px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+        }
+        .portfolio-panel {
+          padding: 22px;
+        }
+        #menu a {
+          padding: 0 10px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="menu-wrapper">
+        <nav id="menu" class="container" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li class="current_page_item">
+              <a href="image.html">Image Editing</a>
+            </li>
+            <li><a href="web.html">Web Design</a></li>
+            <li><a href="video.html">Video Production</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="screencast.html">Screencast</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <header id="logo" class="container">
+        <h1>Bobie Ansah, D</h1>
+        <p>EME 6208: Designing Integrated Media Environments | Fall 2026</p>
+      </header>
+      <div id="page" class="container">
+        <div class="entry">
+          <p>
+            This page showcases my image editing project for EME 6208. I created
+            two versions of a book cover titled “Isn’t Graduate School Cool?” to
+            explore how traditional image editing and generative AI can
+            communicate the same idea.
+          </p>
+        </div>
+      </div>
+      <main class="container">
+        <section class="portfolio-panel">
+          <h2>Image Editing</h2>
+          <p>
+            For this project, I designed two versions of a book cover titled
+            <em>Isn’t Graduate School Cool?</em> The title is intentionally
+            playful, while the images reflect the stress and sometimes
+            overwhelming experience of graduate school. I used GIMP to create
+            the first cover and generative AI to produce an alternative
+            interpretation of the same concept.
+          </p>
+        </section>
+        <div class="portfolio-grid">
+          <section class="project-card">
+            <h3>Book Cover 1: Traditional Editing (GIMP)</h3>
+            <img
+              src="images/frus_grad_student_g.jpeg"
+              alt="Book cover created with GIMP"
+              style="width: 100%; height: auto"
+            />
+          </section>
+          <section class="project-card">
+            <h3>Book Cover 2: AI-Generated Design</h3>
+            <img
+              src="images/AI_Grad student pic.jpeg"
+              alt="AI-generated book cover"
+              style="width: 100%; height: auto"
+            />
+          </section>
+        </div>
+        <section class="portfolio-panel">
+          <h2>Project Reflection</h2>
+          <p>
+            Comparing the two approaches helped me think about the creative
+            control, editing decisions, and time involved in producing an image
+            with traditional tools versus generative AI.
+          </p>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">
+      <p>
+        © Fall 2026 | Bobie Ansah, D || EME 6208: Designing Integrated Media
+        Environments
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="EME 6208 e-portfolio: Contact Me" />
+    <title>Contact Me | Bobie Ansah</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,700,300"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <style>
+      /* Page-specific additions; existing style.css controls the overall appearance. */
+      .container {
+        max-width: 1200px;
+        width: calc(100% - 40px);
+      }
+      #menu-wrapper,
+      #menu {
+        height: auto;
+        min-height: 52px;
+      }
+      #menu {
+        overflow: visible;
+      }
+      #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #menu a {
+        padding: 0 17px;
+      }
+      #logo {
+        height: auto;
+        padding: 10px 0 28px;
+      }
+      #logo h1 {
+        font-size: clamp(34px, 6vw, 80px);
+        letter-spacing: -2px;
+      }
+      #logo p {
+        margin-top: 0;
+        font-size: clamp(14px, 2vw, 20px);
+      }
+      #page {
+        box-sizing: border-box;
+      }
+      .portfolio-panel {
+        background: #fff;
+        padding: 32px;
+        margin: 10px 0 30px;
+        color: #3c342e;
+      }
+      .portfolio-panel h2 {
+        color: #2d2d2d;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      .portfolio-panel h3 {
+        color: #2d2d2d;
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+      .portfolio-panel p {
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .project-card {
+        background: #fff;
+        padding: 25px;
+        color: #3c342e;
+      }
+      .project-card h3 {
+        color: #2d2d2d;
+        font-size: 20px;
+        margin: 0 0 14px;
+      }
+      .project-card p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .image-placeholder {
+        aspect-ratio: 4 / 5;
+        background: #e5e6dd;
+        border: 2px dashed #7d7764;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        color: #635d4e;
+        padding: 18px;
+        box-sizing: border-box;
+      }
+      .image-placeholder strong {
+        font-size: 18px;
+      }
+      .image-placeholder span {
+        font-size: 13px;
+      }
+      .contact-form {
+        display: grid;
+        gap: 16px;
+        max-width: 650px;
+      }
+      .contact-form label {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #c9c8bf;
+        border-radius: 2px;
+        padding: 12px;
+        font: inherit;
+        font-size: 15px;
+        color: #2d2d2d;
+        background: #fff;
+      }
+      .contact-form textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+      .contact-form button {
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        font-size: 14px;
+      }
+      .small-note {
+        font-size: 13px !important;
+        color: #625e56;
+      }
+      @media (max-width: 700px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+        }
+        .portfolio-panel {
+          padding: 22px;
+        }
+        #menu a {
+          padding: 0 10px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="menu-wrapper">
+        <nav id="menu" class="container" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="image.html">Image Editing</a></li>
+            <li><a href="web.html">Web Design</a></li>
+            <li><a href="video.html">Video Production</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="screencast.html">Screencast</a></li>
+            <li class="current_page_item">
+              <a href="contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <header id="logo" class="container">
+        <h1>Bobie Ansah, D</h1>
+        <p>EME 6208: Designing Integrated Media Environments | Fall 2026</p>
+      </header>
+      <div id="page" class="container">
+        <div class="entry">
+          <p>
+            Thanks for visiting my e-portfolio! If you have a question about my
+            projects or would like to connect, feel free to send me a message.
+          </p>
+        </div>
+      </div>
+      <main class="container">
+        <section class="portfolio-panel">
+          <h2>Contact Me</h2>
+          <p>
+            I welcome questions and conversations about my coursework, digital
+            media projects, and educational technology. Use the form below to
+            draft a message.
+          </p>
+          <form class="contact-form" id="contact-form">
+            <div>
+              <label for="sender-name">Your Name</label
+              ><input
+                id="sender-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="sender-email">Your Email</label
+              ><input
+                id="sender-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div>
+              <label for="sender-subject">Subject</label
+              ><input id="sender-subject" name="subject" type="text" required />
+            </div>
+            <div>
+              <label for="sender-message">Message</label
+              ><textarea id="sender-message" name="message" required></textarea>
+            </div>
+            <div>
+              <button class="button" type="submit">Send Email</button>
+            </div>
+          </form>
+        </section>
+        <script>
+          document
+            .getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+              var recipient = "YOUR_EMAIL@example.com"; // Replace with your real email address.
+              if (recipient === "YOUR_EMAIL@example.com") {
+                alert(
+                  "Site owner: Please set your email address in contact.html before using this form.",
+                );
+                return;
+              }
+              var name = document.getElementById("sender-name").value.trim();
+              var email = document.getElementById("sender-email").value.trim();
+              var subject = document
+                .getElementById("sender-subject")
+                .value.trim();
+              var message = document
+                .getElementById("sender-message")
+                .value.trim();
+              var body =
+                "From: " + name + "\nReply-to: " + email + "\n\n" + message;
+              window.location.href =
+                "mailto:" +
+                recipient +
+                "?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                encodeURIComponent(body);
+            });
+        </script>
+      </main>
+    </div>
+    <footer id="footer">
+      <p>
+        © Fall 2026 | Bobie Ansah, D || EME 6208: Designing Integrated Media
+        Environments
+      </p>
+    </footer>
+  </body>
+</html>
